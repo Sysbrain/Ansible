@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars: 
-   instnaces: [ "mongodb", "redis", "mysql" ]
+   instances: [ "mongodb", "redis", "mysql" ]
    imageid: ami-0220d79f3f480ecf5
   tasks: 
   - name: create EC2 instance
