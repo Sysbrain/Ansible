@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars: 
-   instnaces: ["mongodb", "redis", "mysql"]
+   instnaces: [ "mongodb", "redis", "mysql" ]
    imageid: ami-0220d79f3f480ecf5
   tasks: 
   - name: create EC2 instance
@@ -18,6 +18,6 @@
 
   - name: print ec2_output
     debug: 
-     msg: "{{ec2_output }}"
+     msg: "{{ ec2_output }}"
 
   
